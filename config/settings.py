@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '27_x#d#18p8*f14ej7a@wlq2w3rd8vdq5!4$&s$2e_enfhtegy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'disqus',
     'django.contrib.sites',
     'storages',
+    'speciality',
 ]
 
 MIDDLEWARE = [

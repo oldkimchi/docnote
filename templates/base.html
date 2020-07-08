@@ -21,6 +21,7 @@
                 {% if user.is_authenticated %}
                 <li class="nav-item"><a href="#" class="nav-link">Welcome, {{user.get_username}}</a></li>
                 <li class="nav-item"><a href="{% url 'photo:photo_upload' %}" class="nav-link">Diagnosis</a></li>
+                <li class="nav-item"><a href="{% url 'speciality:spec_list' %}" class="nav-link">speciality</a></li>
                 <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link">Logout</a></li>
                 {% else %}
                 <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Login</a></li>

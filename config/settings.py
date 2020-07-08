@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '27_x#d#18p8*f14ej7a@wlq2w3rd8vdq5!4$&s$2e_enfhtegy'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -125,18 +125,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-
-AWS_ACCESS_KEY_ID = 'AKIATJQ33Z23UDQKM2F6'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_REGION = 'ap-northeast-2'
-AWS_STORAGE_BUCKET_NAME = 'jisung'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.%s.amazonaws.com' % (AWS_STORAGE_BUCKET_NAME,AWS_REGION)
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
 
 DEFAULT_FILE_STORAGE = 'config.asset_storage.MediaStorage'
 
